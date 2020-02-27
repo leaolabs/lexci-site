@@ -1,6 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
+import logo from '../assets/images/logolexci.png'
 import './App.css'
 
 import React from 'react'
@@ -8,61 +9,59 @@ import React from 'react'
 
 export default props =>
     <div className="app">
-        <div class="container">
-            <header class="blog-header py-3">
-                <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="col-4 pt-1">
-                        <a class="text-muted" href="/">Inscreva - se</a>
-                    </div>
-                    <div class="col-4 text-center">
-                        <a class="blog-header-logo text-dark" href="/">Lexci</a>
-                    </div>
-                    <div class="col-4 d-flex justify-content-end align-items-center">
-                        <a class="text-muted" href="/" aria-label="Search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
-                                viewBox="0 0 24 24" focusable="false">
-                                <title>Buscar</title>
-                                <circle cx="10.5" cy="10.5" r="7.5" />
-                                <path d="M21 21l-5.2-5.2" />
-                            </svg>
+        <div className="container">
+            <header className="blog-header py-3">
+                <div className="row flex-nowrap justify-content-between align-items-center">
+
+                    <div className="col-5 text-center">
+                        <a className="blog-header-logo text-dark" href="/">
+                            <img src={logo} alt="logo lexci" />
                         </a>
-                        <a class="btn btn-sm btn-outline-secondary" href="/">Login</a>
+                    </div>
+                    <div className="col-3 d-flex justify-content-end align-items-center">
+                        <a className="btn btn-outline-secondary" href="/">Login</a>
                     </div>
                 </div>
             </header>
 
-            <div class="nav-scroller py-1 mb-2">
-                <nav class="nav d-flex justify-content-between">
-                    <a class="p-2 text-muted" href="/">Novidades</a>
-                    <a class="p-2 text-muted" href="/">Nosso time</a>
-                    <a class="p-2 text-muted" href="/">Contatos</a>
-                    <a class="p-2 text-muted" href="/">Filiais</a>
-                    <a class="p-2 text-muted" href="/">Exames que realizamos</a>
+            <div className="nav-scroller py-1 mb-2">
+                <nav className="nav d-flex justify-content-between">
+                    <a className="p-2 text-muted" href="/">Novidades</a>
+                    <a className="p-2 text-muted" href="/">Nosso time</a>
+                    <a className="p-2 text-muted" href="/">Contatos</a>
+                    <a className="p-2 text-muted" href="/">Filiais</a>
+                    <a className="p-2 text-muted" href="/">Exames que realizamos</a>
                 </nav>
             </div>
 
-            <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-                <div class="col-md-6 px-0">
-                    <h1 class="display-4 font-italic">Lexci</h1>
-                    <p class="lead my-3">Realize seus exames em nossa clinica e seja feliz!</p>
+            <div className="row mb-3">
+                <div className="col">
+                    <div className="card">
+                        <div className="card-header">
+                            Consulta de exames
+                        </div>
+                        <div className="card-body">
+                            <h5 className="card-title">Consulte seus exames aqui</h5>
+                            <p className="card-text">Colocar o formulario de consultas de exames aqui aaaaaaaaaaaaaaaaaa ada da ad</p>
+                            <a href="/" className="btn btn-warning">Pesquisar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row mb-2">
-                <div class="col-md-6">
+            <div className="row mb-2">
+                <div className="col-md-6">
                     <div
-                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
-                            <h3 class="mb-0">Featured post</h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                            <a href="/" class="stretched-link">Continue reading</a>
+                        className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div className="col p-4 d-flex flex-column position-static">
+                            <strong className="d-inline-block mb-2 text-danger">Coronavirus</strong>
+                            <h3 className="mb-0">Sobre o novo virus</h3>
+                            <div className="mb-1 text-muted">Fev 2020</div>
+                            <p className="card-text mb-auto">O Ministério da Saúde confirmou nesta terça (25) o primeiro caso de coronavírus no Brasil.</p>
+                            <a href="/" className="stretched-link">Continue lendo ...</a>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                        <div className="col-auto d-none d-lg-block">
+                            <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
                                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
                                 aria-label="Placeholder: Thumbnail">
                                 <title>Placeholder</title>
@@ -72,19 +71,18 @@ export default props =>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div className="col-md-6">
                     <div
-                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-success">Design</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <div class="mb-1 text-muted">Nov 11</div>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                            <a href="/" class="stretched-link">Continue reading</a>
+                        className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div className="col p-4 d-flex flex-column position-static">
+                            <strong className="d-inline-block mb-2 text-success">Exames</strong>
+                            <h3 className="mb-0">O que é um check-up?</h3>
+                            <div className="mb-1 text-muted">Jan 19</div>
+                            <p className="mb-auto">Bom, antes de explicar o básico dos exames de sangue e check-ups é preciso esclarecer alguns pontos.</p>
+                            <a href="/" className="stretched-link">Continue lendo ...</a>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                        <div className="col-auto d-none d-lg-block">
+                            <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
                                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
                                 aria-label="Placeholder: Thumbnail">
                                 <title>Placeholder</title>
@@ -97,19 +95,16 @@ export default props =>
             </div>
         </div>
 
-        <main role="main" class="container">
-            <div class="row">
-                <div class="col-md-8 blog-main">
-                    <h3 class="pb-4 mb-4 font-italic border-bottom">
-                        From the Firehose
-                </h3>
+        <main role="main" className="container">
+            <div className="row">
+                <div className="col-md-8 blog-main">
+                    <h3 className="pb-4 mb-4 font-italic border-bottom">Leia mais </h3>
 
-                    <div class="blog-post">
-                        <h2 class="blog-post-title">Sample blog post</h2>
-                        <p class="blog-post-meta">January 1, 2014 by <a href="/">Mark</a></p>
+                    <div className="blog-post">
+                        <h2 className="blog-post-title">O que é um check-up?</h2>
+                        <p className="blog-post-meta">Janeiro 20, 2019 by <a href="/">Dr. Marcio Gimenes</a></p>
 
-                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap.
-                        Basic typography, images, and code are all supported.</p>
+                        <p>Todo mundo já fez um check-up pelo menos uma vez na vida. Algumas pessoas exageram e procuram seu médico de 6 em 6 meses para realizar seus exame</p>
                         <hr />
                         <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus
                             mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere
@@ -120,38 +115,19 @@ export default props =>
                         </blockquote>
                         <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
                         fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                        <h2>Heading</h2>
-                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
-                            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus,
-                        porta ac consectetur ac, vestibulum at eros.</p>
-                        <h3>Sub-heading</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                        <pre><code>Example code block</code></pre>
-                        <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-                        <h3>Sub-heading</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
-                            lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
-                            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                        amet risus.</p>
-                        <ul>
-                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                            <li>Donec id elit non mi porta gravida at eget metus.</li>
-                            <li>Nulla vitae elit libero, a pharetra augue.</li>
-                        </ul>
-                        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-                    </p>
-                        <ol>
-                            <li>Vestibulum id ligula porta felis euismod semper.</li>
-                            <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-                            <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-                        </ol>
-                        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+                        <h2>Hemograma</h2>
+                        <p>O hemograma é o exame para avaliar as três principais linhagens de células do sangue (hemácias, leucócitos e plaquetas). É o mais complexo e o que merece maiores explicações. Concentre-se apenas naqueles que explicarei.</p>
+                        <h3>Hemácias (glóbulos vermelhos)</h3>
+                        <p>Serve para o diagnóstico de anemia, que é a redução do número de células vermelhas. São levados em conta principalmente os valores do hematócrito e da hemoglobina. Valores um pouco fora da faixa de referência podem não ter significado clínico. Mulheres podem ter hematócrito/hemoglobina um pouco mais baixo devido a perdas de sangue na menstruação. Fumantes costumam tê-los um pouco elevado devido a pior oxigenação do sangue pelos seus pulmões. Repito: esses valores devem sempre ser interpretados</p>
+                        <h3>Leucócitos (glóbulos brancos)</h3>
+                        <p>
+                            São as nossas células de defesa. É o exército ou a polícia do organismo. Chamamos de leucocitose quando estão aumentados. Normalmente indicam uma resposta do organismo a um processo infeccioso em curso. Pacientes com pneumonia ou um abscesso de pele, por exemplo, costumam ter seu número de leucócitos aumentados. A ausência de leucocitose de modo algum descarta uma infecção. Mais uma vez, o quadro clínico é sempre soberano.
+                        </p>
                     </div>
 
-                    <div class="blog-post">
-                        <h2 class="blog-post-title">Another blog post</h2>
-                        <p class="blog-post-meta">December 23, 2013 by <a href="/">Jacob</a></p>
+                    <div className="blog-post">
+                        <h2 className="blog-post-title">Outra postagem do blog</h2>
+                        <p className="blog-post-meta">Dezembro 28, 2019 by <a href="/">Dr. Marcio Gimenes</a></p>
 
                         <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus
                             mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere
@@ -167,9 +143,9 @@ export default props =>
                         porta ac consectetur ac, vestibulum at eros.</p>
                     </div>
 
-                    <div class="blog-post">
-                        <h2 class="blog-post-title">New feature</h2>
-                        <p class="blog-post-meta">December 14, 2013 by <a href="/">Chris</a></p>
+                    <div className="blog-post">
+                        <h2 className="blog-post-title">Outra postagem qualquer</h2>
+                        <p className="blog-post-meta">Novembro 14, 2019 by <a href="/">Michelle Carvalho</a></p>
 
                         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
                             lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
@@ -186,44 +162,34 @@ export default props =>
                     </p>
                     </div>
 
-                    <nav class="blog-pagination">
-                        <a class="btn btn-outline-primary" href="/">Older</a>
-                        <a class="btn btn-outline-secondary disabled" href="/" tabindex="-1" aria-disabled="true">Newer</a>
+                    <nav className="blog-pagination">
+                        <a className="btn btn-outline-primary" href="/">Antigos</a>
+                        <a className="btn btn-outline-secondary disabled" href="/" tabindex="-1" aria-disabled="true">Novos</a>
                     </nav>
 
                 </div>
 
-                <aside class="col-md-4 blog-sidebar">
-                    <div class="p-4 mb-3 bg-light rounded">
-                        <h4 class="font-italic">About</h4>
-                        <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur
-                        purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <aside className="col-md-4 blog-sidebar">
+                    <div className="p-4 mb-3 bg-light rounded">
+                        <h4 className="font-italic">Sobre nós</h4>
+                        <p className="mb-0">Somos um laboratorio especializado em varios tipos de exame, venha fazer exames conosco e tal ...</p>
                     </div>
 
-                    <div class="p-4">
-                        <h4 class="font-italic">Archives</h4>
-                        <ol class="list-unstyled mb-0">
-                            <li><a href="/">March 2014</a></li>
-                            <li><a href="/">February 2014</a></li>
-                            <li><a href="/">January 2014</a></li>
-                            <li><a href="/">December 2013</a></li>
-                            <li><a href="/">November 2013</a></li>
-                            <li><a href="/">October 2013</a></li>
-                            <li><a href="/">September 2013</a></li>
-                            <li><a href="/">August 2013</a></li>
-                            <li><a href="/">July 2013</a></li>
-                            <li><a href="/">June 2013</a></li>
-                            <li><a href="/">May 2013</a></li>
-                            <li><a href="/">April 2013</a></li>
+                    <div className="p-4">
+                        <h4 className="font-italic">Arquivos</h4>
+                        <ol className="list-unstyled mb-0">
+                            <li><a href="/">Fevereiro 2020</a></li>
+                            <li><a href="/">Janeiro 2020</a></li>
+                            <li><a href="/">Dezembro 2019</a></li>
+                            <li><a href="/">Novembro 2019</a></li>
                         </ol>
                     </div>
 
-                    <div class="p-4">
-                        <h4 class="font-italic">Elsewhere</h4>
-                        <ol class="list-unstyled">
-                            <li><a href="/">GitHub</a></li>
-                            <li><a href="/">Twitter</a></li>
-                            <li><a href="/">Facebook</a></li>
+                    <div className="p-4">
+                        <h4 className="font-italic">Redes sociais</h4>
+                        <ol className="list-unstyled">
+                            <li><a href="https://www.instagram.com/lexciexameseconsultas/?hl=pt-br" target="blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/lexcilab/" target="blank">Facebook</a></li>
                         </ol>
                     </div>
                 </aside>
@@ -232,7 +198,7 @@ export default props =>
 
         </main>
 
-        <footer class="blog-footer">
+        <footer className="blog-footer">
             <p>Desenvolvido por Leonardo Nascimento Cintra <a
                 href="/ttps://twitter.com/leonardoncintra">@leonardoncintra</a>.</p>
             <p>
