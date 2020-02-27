@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router'
-import App from './App'
 import Login from '../components/login/Login'
+import Home from '../components/templates/home/Home'
 
 export default props =>
     <Switch>
@@ -9,7 +9,7 @@ export default props =>
             <Login />
         </Route>
         <Route exact patch='/'>
-            <App />
+            <Home />
         </Route>
         <Redirect from="*" to="/" />
     </Switch>

@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './Login.css'
 import React, { Component } from 'react'
 import logo from '../../assets/images/logolexci.png'
 
